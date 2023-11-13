@@ -8,7 +8,7 @@ import { errorHandler } from "./middleware/error.middleware";
 import { notFoundHandler } from "./middleware/not-found.middleware";
 import { healthRouter } from './health';
 import { queueRouter } from './apps/queue'
-
+import { userRouter } from './users/users.router'
 import { connect, disconnect } from './utils/database'
 
 dotenv.config();
@@ -67,6 +67,7 @@ app.use("/api", apiRouter);
 apiRouter.use("/messages", messagesRouter);
 apiRouter.use('/health', healthRouter);
 apiRouter.use('/queue', queueRouter);
+apiRouter.use('/users', userRouter);
 
 app.use(errorHandler);
 app.use(notFoundHandler);
