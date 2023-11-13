@@ -1,4 +1,9 @@
 
+# My Config
+.env 
+package-lock.json
+yarn.lock
+
 # Created by https://www.toptal.com/developers/gitignore/api/node,macos,windows,visualstudiocode,jetbrains+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,windows,visualstudiocode,jetbrains+all
 
